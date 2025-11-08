@@ -1,2 +1,6 @@
-.vscode
-./ejecutable.exe
+.vscode\
+ejecutable.exe
+./ejecutables
+prueba.c
+./prueba.c
+
