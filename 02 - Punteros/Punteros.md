@@ -4,7 +4,7 @@ En C, un puntero es una variable que guarda una dirección de la memoria.
 
 Para entender esto, antes es necesario entender dos operadores, `*` y `&`:
 
-- Operador `java*` : Obtiene el valor guardado en la dirección a la que apunta el puntero y también se utiliza para definir el puntero.
+- Operador `*` : Obtiene el valor guardado en la dirección a la que apunta el puntero y también se utiliza para definir el puntero.
 
 - Operador `&` : Obtiene la dirección de la memoria de la variable a la que se la aplique.
 

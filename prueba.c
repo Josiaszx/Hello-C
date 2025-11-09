@@ -7,11 +7,15 @@
 void play(int *ptr);
 
 int main(int argc, char** argv) {
-    for (int i = 32; i <= 126; i++)
+   
+    char arr[] = "Hola mundo";
+
+    for (int i = 0; i < 11; i++)
     {
-        // char car = i;
-        printf("%c", i);
+        printf("%c", arr[i]);
     }
+    
+    
     
     
 }
