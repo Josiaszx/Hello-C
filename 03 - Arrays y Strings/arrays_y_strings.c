@@ -31,7 +31,14 @@ int main()
     char saludo[11];
 
     // tambien se puede inicializar directamente con el texto desedao
-    char string2[] = {"string 2"};
+    char string2[] = "string 2";
+
+    //como un string es un array, podemos modificar cada caracter por su indice
+    string2[0] = 'h'; // --> string2 = "htring 2"
+
+    // para imprimir un array:
+    printf("%s", string2); // --> string 2
+    // aunque tambien podemos recorrerlo con un bucle
 
     return 0;
 }

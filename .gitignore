@@ -3,4 +3,5 @@ ejecutable.exe
 ./ejecutables
 prueba.c
 ./prueba.c
+./.idea
 
