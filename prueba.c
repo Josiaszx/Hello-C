@@ -1,20 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
-#include <float.h>
-#include <math.h>
 #include <string.h>
 
-void play(int *ptr);
-
-int main(int argc, char** argv) {
-   
-
+int main() {
+    char hola[] = "holaa";
+    char a[] = "hola";
     
-    
-    
-}
+    printf("%d", strcmp(hola, a));
 
-void play(int *ptr) {
-    *ptr = 21;
+    return 0;
 }
