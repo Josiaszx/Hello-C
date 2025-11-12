@@ -25,7 +25,7 @@ int main()
     strcpy(p1.apellido, "Perez"); // asignamos el apellido de p1 como Perez
     p1.edad = 19; // asignamos la edad de p1 como 19
 
-    
+
     // mostrar datos
     printf("nombre de p1: %s", p1.nombre);
     printf("apellido de p1: %s\n", p1.apellido);

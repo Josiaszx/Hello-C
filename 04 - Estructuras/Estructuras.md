@@ -35,7 +35,7 @@ p1.apellido // acceso al campo de apellido
 p1.edad // acceso al campo de edad
 ```
 
-Para acceder a campos de un struct desde un puntero podemos usar dos opciones. Por desreferenciacion y por el operador `-->` 
+Para acceder a campos de un struct desde un puntero podemos usar dos opciones. Por desreferenciacion y por el operador `->` 
 
 ```c
 struct persona *p2ptr = &p2;
