@@ -4,4 +4,4 @@ ejecutable.exe
 prueba.c
 ./prueba.c
 ./.idea
-
+*.exe

@@ -57,3 +57,18 @@ int x2 = 30;
 Con esto modificamos la dirección a la que apunta `ptr`
 
 Y de esta forma, si seguimos agregando mas `*` podemos definir punteros a punteros n veces.
+
+## Punteros a punteros
+
+Un puntero a una función es un puntero que guarda la dirección de memoria de una función, esto nos permite ejecutar dicha función accediendo a des referenciando a dicho puntero.
+
+**Sintaxis:**
+
+```c
+void (*ptr_funcion)() = &saludo;
+// void --> tipo de dato que retorna la funcion
+// (*ptr_funcion) --> define que es un puntero a funcion (siempre con parentesis)
+//() --> indica los parametros que recibe la funcion (en este caso ninguno)
+// &saludo --> asigna la direccion de memoria de la funcion saludo al puntero
+ptr_funcion(); // llama a la funcion saludo a traves del puntero
+```

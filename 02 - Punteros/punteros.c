@@ -1,7 +1,11 @@
 #include <stdio.h>
 
+void saludo();
+int sumar(int a, int b);
+
 int main()
 {
+    //PUNTEROS
     // un puntero es una variable que guarda una posicion en memoria, 
 
     int num = 9;
@@ -24,5 +28,36 @@ int main()
     *ptr_to_ptr = &y; // ahora ptr apunta a y por lo que *ptr = 12;
 
     
+    //PUNTEROS A FUNCIONES
+    //un puntero a funcion es una variable que guarda la direccion de memoria de una funcion
+    void (*ptr_funcion)() = &saludo;
+    // void --> tipo de dato que retorna la funcion
+    // (*ptr_funcion) --> define que es un puntero a funcion (es importante los parentesis)
+    //() --> indica los parametros que recibe la funcion (en este caso ninguno)
+    // &saludo --> asigna la direccion de memoria de la funcion saludo al puntero
+    ptr_funcion(); // llama a la funcion saludo a traves del puntero
+
+    int (*ptr_suma)(int, int) = &sumar;
+    // int --> tipo de dato que retorna la funcion
+    // (*ptr_suma) --> define que es un puntero a funcion
+    //(int, int) --> indica los parametros que recibe la funcion (en este caso dos enteros)
+    // &sumar --> asigna la direccion de memoria de la funcion sumar al puntero
+
+    int resultado = ptr_suma(5, 7); // llama a la funcion sumar a traves del puntero
+    printf("Resultado de la suma: %d\n", resultado); // --> Resultado de la suma: 12
+
+
+
     return 0;
+}
+
+
+void saludo()
+{
+    printf("Hola, soy una funcion!\n");
+}
+
+int sumar(int a, int b)
+{
+    return a + b;
 }
