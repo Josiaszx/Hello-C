@@ -58,7 +58,7 @@ Con esto modificamos la dirección a la que apunta `ptr`
 
 Y de esta forma, si seguimos agregando mas `*` podemos definir punteros a punteros n veces.
 
-## Punteros a punteros
+## Punteros a funciones
 
 Un puntero a una función es un puntero que guarda la dirección de memoria de una función, esto nos permite ejecutar dicha función accediendo a des referenciando a dicho puntero.
 
