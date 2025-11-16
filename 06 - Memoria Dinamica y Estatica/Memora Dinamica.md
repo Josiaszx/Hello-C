@@ -2,7 +2,7 @@
 
 Conceptos previos a conocer antes de entender como funciona el manejo dinámico de memoria:
 
-[Stack y Heap](https://www.notion.so/Stack-y-Heap-2aa85c6b52ee80278cf0d2e4cf7d40f9?pvs=21)
+[Stack y Heap](./Stack%20y%20Heap.md)
 
 - Memoria estática: memoria que se asigna al momento de compilar el programa.
 - Memora dinámica: memoria que se asigna en tiempo de ejecución (mientras el programa se esta ejecutando).
