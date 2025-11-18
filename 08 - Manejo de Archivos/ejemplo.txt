@@ -1,0 +1,3 @@
+Hola, este es un ejemplo de manejo de archivos en C.
+Seguna linea del archivo.
+Linea final antes de EOF.
