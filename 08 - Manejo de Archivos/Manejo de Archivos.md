@@ -43,6 +43,20 @@ Y ejecutamos lo siguiente:
 FILE *archivo = fopen("ejemplo.txt", "r");
 int letra = fgetc(archivo) // letra = 69 (ASCII(69) = E)
 ```
+Tambien podemos utilizar la función `fgets()` que nos lee una linea completa del texto y lo guarda en un buffer dado. Recibe tres parámetros, la dirección del buffer donde guardara la linea leída, la cantidad maxima de caracteres que podrá leer y el puntero al archivo del que se va a leer. Si todo sale bien, retorna la dirección del buffer dado y si no, retorna `NULL`.
+
+**Ejemplo:**
+
+```c
+FILE *archivo = fopen("ejemplo.txt", "r");
+char buffer[60]; // buffer donde se guardara la linea leida
+if (fgets(buffer, 60, archivo) != NULL) {
+	printf("%s", buffer);
+}
+// esto leera la primera linea del archivo, la guardara en buffer y luego la imprimira
+```
+
+💬 `fgets()` lee hasta encontrar un `\n`, un `EOF`, o se llegue a la cantidad maxima de caracteres definida en los parámetros.
 
 ## EOF (End Of File)
 

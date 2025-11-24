@@ -20,7 +20,19 @@ int main() {
     while ((caracter = fgetc(archivo)) != EOF) {
 	printf("%c", caracter);
     }
+    printf("\n\n");
     
+    // recorrer el archivo mediante fgets()
+    char buffer[60];
+    rewind(archivo); // regresar el cursor al inicio del archivo
+   
+    // fgets lee una línea completa o hasta el tamaño del buffer
+    while (fgets(buffer, sizeof(buffer), archivo) != NULL) {
+        printf("%s", buffer);
+    }
+
+
+    fclose(archivo); // cerrar el archivo
 
     return 0;
 }
